@@ -4,6 +4,10 @@ version = requests.__version__
 
 print('Requests version is {v}'.format(v = version))
 
-google_url = requests.get("http:/google.com")
+google_url = requests.get("http://www.google.com")
 
-print('google_homepage is {h}'.format(h= google_url))
+print(google_url)
+
+myself_url = requests.get("https://raw.githubusercontent.com/Weida-W/CMPUT404-lab1/master/lab1.py")
+
+print(myself_url.text)
